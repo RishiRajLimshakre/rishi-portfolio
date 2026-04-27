@@ -1,0 +1,137 @@
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills {
+  padding: var(--section-padding);
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-base) 0%, rgba(30, 41, 59, 0.15) 50%, var(--bg-base) 100%);
+}
+
+.skills-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+.skills-heading {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.skills-heading .heading-line {
+  margin: 0 auto 1.5rem;
+}
+
+.skills-heading .section-subtitle {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Category groups */
+.skills-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.skill-group-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skill-group-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.skill-group-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border-accent), transparent);
+}
+
+/* Skill Cards Grid */
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.skill-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(30, 41, 59, 0.55);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: 0.65rem 1.1rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+  cursor: default;
+}
+
+.skill-card:hover {
+  background: rgba(59, 130, 246, 0.08);
+  border-color: var(--border-accent);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 24px rgba(59, 130, 246, 0.12);
+}
+
+.skill-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.skill-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+/* Icon color backgrounds */
+.icon-html    { background: rgba(239, 68, 68, 0.15); }
+.icon-css     { background: rgba(59, 130, 246, 0.15); }
+.icon-js      { background: rgba(251, 191, 36, 0.15); }
+.icon-ts      { background: rgba(59, 130, 246, 0.15); }
+.icon-react   { background: rgba(6, 182, 212, 0.15); }
+.icon-node    { background: rgba(34, 197, 94, 0.15); }
+.icon-express { background: rgba(148, 163, 184, 0.1); }
+.icon-mongo   { background: rgba(34, 197, 94, 0.15); }
+.icon-git     { background: rgba(239, 68, 68, 0.15); }
+.icon-github  { background: rgba(148, 163, 184, 0.1); }
+.icon-postman { background: rgba(251, 107, 36, 0.15); }
+.icon-vscode  { background: rgba(59, 130, 246, 0.15); }
+.icon-render  { background: rgba(99, 102, 241, 0.15); }
+.icon-vercel  { background: rgba(148, 163, 184, 0.1); }
+.icon-netlify { background: rgba(6, 182, 212, 0.15); }
+
+@media (max-width: 600px) {
+  .skill-cards {
+    gap: 0.65rem;
+  }
+  .skill-card {
+    padding: 0.55rem 0.9rem;
+  }
+  .skill-name {
+    font-size: 0.85rem;
+  }
+}
