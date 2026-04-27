@@ -1,0 +1,123 @@
+/* ===========================
+   FOOTER
+=========================== */
+
+.footer {
+  border-top: 1px solid var(--glass-border);
+  background: rgba(15, 23, 42, 0.9);
+  padding: 2.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.4;
+}
+
+.footer-inner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.footer-logo {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.footer-logo span {
+  color: var(--accent-cyan);
+}
+
+.footer-tagline {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.footer-tagline strong {
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+/* Social Links */
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-social-link {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast);
+  color: var(--text-secondary);
+}
+
+.footer-social-link:hover {
+  background: rgba(59, 130, 246, 0.1);
+  border-color: var(--border-accent);
+  color: var(--accent-cyan);
+  transform: translateY(-3px);
+}
+
+.footer-social-link svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Copyright */
+.footer-copy {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  text-align: right;
+  line-height: 1.6;
+}
+
+.footer-copy-heart {
+  color: #ef4444;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
+
+  .footer-copy {
+    text-align: center;
+  }
+}
+
+/* Keyframes are defined globally in index.css */
